@@ -1,0 +1,58 @@
+extends layout
+
+block content
+	.block-header
+		h2 ДОХОД
+	.row.clearfix
+		.col-lg-12.col-md-12.col-sm-12.col-xs-12
+			.card
+				.header
+					h2 ВВЕСТИ ДОХОД
+				.body
+					form#form_validation_rent
+						.form-group.form-float
+							.form-line
+								input#rent_date.date.form-control(type='text', name='date', placeholder='Выберите дату', required='')
+						.form-group.form-float
+							select#rent_operation(title='Выберите операцию', type='select', name='operation', required='')
+								option(value='', disabled='', selected='') Выберите операцию
+								option Доход / Зарплата
+								option Доход / Пополнение наличными
+								option Доход / Перевод средств
+								option Доход / Начисление процентов
+								option Доход / Другое
+						.form-group.form-float
+							select#rent_acc.accountSelector(title='Выберите счет', type='select', name='accSel', required='')
+								option(value='', disabled='', selected='') Выберите счет
+						.form-group.form-float
+							.form-line
+								input#rent_sum.form-control(type='number', name='number', min='0.001',required='')
+								label.form-label Сумма
+						.form-group.form-float
+							.form-line
+								input#rent_comment.form-control(type='text', name='comment')
+								label.form-label Комментарий
+						button#new_rent.btn.bg-light-green.waves-effect(type='submit') ПОДТВЕРДИТЬ ДОХОД
+			.card
+				.header
+					h2 МОИ ДОХОДЫ
+				.tab-content
+					.body
+						.table-responsive
+							table#table_myrent.display(cellspacing='0', width='100%')
+								thead
+									tr
+										th Операция дохода
+										th Счет
+										th Дата
+										th Сумма
+										th Комментарий
+										th Удалить доход
+								tfoot
+									tr
+										th 
+										th 
+										th
+										th
+										th
+										th 

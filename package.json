@@ -1,0 +1,24 @@
+{
+  "name": "SaveMoney",
+  "version": "1.0.0",
+  "description": "individual project Save Money",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gogs.juniorlabs.ru/N-ter/individual_project.git"
+  },
+  "author": "intern Junior Lab",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.15.3",
+    "jade": "~1.11.0",
+    "body-parser": "~1.17.2",
+    "path": "~0.12.7",
+    "adminbsb-materialdesign": "~1.0.5",
+    "jquery-validation": "~1.16.0",
+    "serve-favicon": "~2.4.3"
+  }
+}

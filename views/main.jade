@@ -1,0 +1,47 @@
+extends layout
+
+block content
+	.block-header
+		h2 УПРАВЛЕНИЕ СЧЕТАМИ
+	.row.clearfix
+		.col-lg-12.col-md-12.col-sm-12.col-xs-12
+			.card
+				.header
+					h2 СОЗДАТЬ НОВЫЙ СЧЕТ
+				.body
+					form#form_validation
+						.form-group.form-float
+							.form-line
+								input#name_account.form-control(type='text', name='name', required='')
+								label.form-label Название счета
+						.form-group.form-float
+							.form-line
+								input#sum_account.form-control(type='number', name='number', required='')
+								label.form-label Сумма
+						.form-group
+							input#rub.with-gap(type='radio', name='valuta', value="руб")
+							label(for='rub') руб
+							input#usd.with-gap(type='radio', name='valuta', value="USD")
+							label.m-l-20(for='usd') USD
+							input#eur.with-gap(type='radio', name='valuta', value="EUR")
+							label.m-l-20(for='eur') EUR
+						button#new_account.btn.bg-light-green.waves-effect(type='submit') СОЗДАТЬ СЧЕТ
+			.card
+				.header
+					h2 МОИ СЧЕТА
+				.tab-content
+					.body
+						.table-responsive
+							table#table_my-money.display(cellspacing='0', width='100%')
+								thead
+									tr
+										th Название счета
+										th Сумма
+										th Валюта
+										th Удалить счет
+								tfoot
+									tr
+										th 
+										th 
+										th
+										th  

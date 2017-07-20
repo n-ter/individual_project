@@ -1,0 +1,67 @@
+doctype html
+
+head
+	title= page
+	meta(charset='utf-8')
+	link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
+	link(href='/fonts/material-icons.css', rel='stylesheet', type='text/css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/plugins/bootstrap/css/bootstrap.min.css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/plugins/node-waves/waves.min.css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/plugins/animate-css/animate.min.css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/css/style.min.css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/css/themes/all-themes.css')
+	link(rel='stylesheet' href='/adminbsb-materialdesign/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')
+	link(rel='stylesheet' href='/stylesheets/jquery.dataTables.css')
+	link(rel='stylesheet' href='/stylesheets/my-style.css')
+	script(src='/adminbsb-materialdesign/plugins/jquery/jquery.min.js')
+	script(src='/adminbsb-materialdesign/plugins/bootstrap/js/bootstrap.min.js')
+	script(src='/adminbsb-materialdesign/plugins/node-waves/waves.min.js')
+	script(src='/adminbsb-materialdesign/plugins/momentjs/moment.js')
+	script(src='/adminbsb-materialdesign/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js')
+	script(src='/jquery-validation/dist/jquery.validate.min.js')
+	script(src='/adminbsb-materialdesign/js/admin.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/jquery.dataTables.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/buttons.flash.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/buttons.flash.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/jszip.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/pdfmake.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/vfs_fonts.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/buttons.html5.min.js')
+	script(src='/adminbsb-materialdesign/plugins/jquery-datatable/extensions/export/buttons.print.min.js')
+	script(src='/javascripts/validation.js')
+	script(src='/javascripts/my_js.js')
+body.theme-light-green
+	header#header.page-topbar
+		.navbar
+			.container-fluid
+			.navbar-header
+				a.navbar-toggle.collapsed(href='javascript:void(0);', data-toggle='collapse', data-target='#navbar-collapse', aria-expanded='false')
+				a.bars(href='javascript:void(0);')
+				a.navbar-brand(href='/') SAVE MONEY $ Junior Lab
+		section
+			aside#leftsidebar.sidebar
+				.user-info
+				.menu
+					ul.list
+						li: a(href='/')
+							i.material-icons.col-green credit_card
+							span УПРАВЛЕНИЕ СЧЕТАМИ 
+						li: a(href='/myactions')
+							i.material-icons.col-green playlist_add_check
+							span ЖУРНАЛ ОПЕРАЦИЙ
+						li: a(href='/rate')
+							i.material-icons.col-green remove_circle_outline
+							span РАСХОД
+						li: a(href='/rent')
+							i.material-icons.col-green add_circle_outline
+							span ДОХОД
+						li: a(href='/statistic')
+							i.material-icons.col-green attach_money
+							span ДОСТУПНЫЕ СРЕДСТВА
+						li.header
+
+					div#course_v
+	section.content
+		.conteiner
+			block content
