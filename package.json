@@ -6,11 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://gogs.juniorlabs.ru/N-ter/individual_project.git"
-  },
-  "author": "intern Junior Lab",
+  "author": "Terebova Natalia",
   "license": "MIT",
   "dependencies": {
     "express": "~4.15.3",
